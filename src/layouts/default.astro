@@ -1,6 +1,5 @@
 ---
 import NavBar from "@/components/NavBar.astro";
-import { ViewTransitions } from "astro:transitions";
 import "@/assets/css/main.css";
 
 const { title } = Astro.props;
@@ -13,7 +12,6 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title ? `${title} - E23.DEV` : "E23.DEV"}</title>
-		<ViewTransitions />
 	</head>
 	<body class="text-gray-200 bg-slate-900">
 		<NavBar class="no-select" />
