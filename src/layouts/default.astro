@@ -1,22 +1,22 @@
 ---
 import NavBar from "@/components/NavBar.astro";
-import "@/assets/css/main.css";
+import "@/styles/main.scss";
 
 const { title } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image" href="/favicon.ico" />
-		<title>{title ? `${title} - E23.DEV` : "E23.DEV"}</title>
-	</head>
-	<body class="text-gray-200 bg-slate-900">
-		<NavBar class="no-select" />
-		<div class="flex w-full pt-[64px] min-h-screen">
-			<slot />
-		</div>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="icon" type="image" href="/favicon.ico" />
+        <title>{title ? `${title} - E23.DEV` : "E23.DEV"}</title>
+    </head>
+    <body class="text-gray-200 bg-slate-900">
+        <NavBar class="no-select" />
+        <div class="flex w-full pt-[64px] min-h-screen">
+            <slot />
+        </div>
+    </body>
 </html>
